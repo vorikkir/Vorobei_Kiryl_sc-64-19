@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заголовок первого уровня</title>
+</head>
+<body>
+    <h1 align="center">Заголовок первого уровня</h1><!-- Насколько я понял, что атрибут align устарел и выравниевание+
+    размер шрифта, цвет задается в СSS?-->
+    <h2>Предварительно форматированный текст:</h2>
+<pre>
+ x | o |
+‐‐‐‐‐‐‐‐‐‐‐
+   | х |
+‐‐‐‐‐‐‐‐‐‐‐
+ o | x | o</pre>
+    <hr>
+    <h2>Тег address</h2>
+    <address>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</address>
+    <hr>
+    <h2>Семантические и функциональные строчные теги</h2>
+    Пожелания автора:<br>
+    <del><font color="red">Данный текст убрать из монографии</font></del> и заменить его на
+    <ins><font color="blue">вновь помещённый текст</font></ins>.
+    <hr>
+    <h2>Работа со строчными и блоковыми цитатами</h2>
+    <p>Цитата короткая:<br>
+        <cite>И всё­таки она вертится!</cite></p>
+    <p>Цитата занимающая несколько предложений:</p>
+    <blockquote>О сколько нам открытий чудных<br>
+        Готовят просвещенья дух<br>
+        И опыт, сын ошибок трудных,<br>
+        И гений, парадоксов друг,<br>
+        И случай, бог изобретатель...</blockquote>
+    <hr>
+    <h2>Семантические и функциональные строчные теги</h2>
+    <p><strong>Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным.</strong>
+        <em>Тэг &lt;em&gt; менее важным.</em>
+        В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <b>полужирным</b>
+        и <i>курсивом</i> соответственно.</p>
+    <hr>
+    <h2>Теги форматирования машинного языка</h2>
+    <p>При выполнении программного кода на языке PERL:</p>
+    <code>#!/usr/local/bin/perl<br>
+        print "Content‐type: text/html\n\n";<br>
+        print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";</code>
+    <p>Программа выведет:</p>
+    <code>Hello, world!</code>
+    <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+    <strong><font size="6">Hello, World!</font></strong>
+    <hr>
+    <h2>Комментарии и литералы(мнемоники) в HTML</h2>
+    <p>&lt;&excl;&ndash; &ndash; это коментарий &ndash; &ndash;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&lt;&excl;&ndash; &ndash; и это также комментарий,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp; занимающий более одной строки &ndash; &ndash;&gt;</p>
+    <hr>
+    <h2>Теги над­ и подстрочных символов</h2>
+    <h3 align="center">Магазин работает:</h3>
+    <div align="center">
+    <p>с 8<sup><ins>00</ins></sup> до 18<sup><ins>30</ins></sup><br>
+        обед с 13<sup><ins>00</ins></sup> до 14<sup><ins>00</ins></sup><br>
+        выходной:<ins>суббота</ins>,<ins>воскресенье</ins></p>
+    </div>
+    <hr>
+    <h2>Вот такой текст</h2>
+    <p><font size="5">
+<strong><sup>Э</sup><sub><strong>т</strong></sub><sup>о</sup> <sub><strong>п</strong></sub><sup>р</sup><sub><strong>о</strong></sub><sup>с</sup><sub><strong>т</strong></sub><sup>о</sup> <sub><strong>в</strong></sub><sup>е</sup><sub><strong>с</strong></sub><sup>ё</sup><sub><strong>л</strong></sub><sup>ы</sup><sub><strong>й</strong></sub> <sup>т</sup><sub><strong>е</strong></sub><sup>к</sup><sub><strong>с</strong></sub><sup>т</sup></strong>
+    </font></p>
+    <hr>
+    <h2>Акроним и курсив</h2>
+    <p>ТФ: Y(<i>x</i>)=e<sup><i>-i&pi;x</i></sup>+log<sub><i>x</i></sub>4</p>
+    <hr>
+    <h2>Тег small внутри абзаца</h2><!--в образце опечатка "внтури"-->
+    <p align="right"><small>Создано при помощи блокнота&copy;</small></p>
+</body>
+</html>
