@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form_reg</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="last_name" id="last_name" pattern="^[а-яА-ЯёЁ]+$" placeholder="Фамилия"
+                  size="25" required autofocus><label for="last_name" >Фамилия</label><br>
+            <input type="text" name="name" id="name" pattern="^[а-яА-ЯёЁ]+$" placeholder="Имя"  size="20" required>
+            <label for="name">Имя</label><br>
+            <input type="text" name="patronymic" id="patronymic" pattern="^[а-яА-ЯёЁ]+$" placeholder="Отчество"
+                   size="24" required><label for="patronymic">Отчество</label>
+                <fieldset>
+                    <legend>Паспортные данные</legend>
+                    <input type="text" name="series" size="2px" pattern="[A-Z]{2}" maxlength="2" required
+                           placeholder="Серия">
+                    <input type="text" name="number" pattern="[0-7]{7}" maxlength="7" required placeholder="Номер">
+                </fieldset>
+            <fieldset>
+                <legend>Дата рождения</legend>
+                <input type="text" name="birthday" id="birthday" size="1px" pattern="[0-9]{4}" maxlength="4" required>
+                <label for="birthday">Год рождения 4-е цифры</label><br>
+                <select name="month" id="month">
+                    <option value="January">Январь</option>
+                    <option value="February">Февраль</option>
+                    <option value="March">Март</option>
+                    <option value="April">Апрель</option>
+                    <option value="May">Май</option>
+                    <option value="June">Июнь</option>
+                    <option value="July">Июль</option>
+                    <option value="August">Август</option>
+                    <option value="September">Сентябрь</option>
+                    <option value="October">Октябрь</option>
+                    <option value="November">Ноябрь</option>
+                    <option value="December">Декабрь</option>
+                </select><label for="month">Месяц рождения</label><br>
+                <input type="number" name="date" id="date" max="31" min="1" step="1">
+                <label for="date">Диапазон от 1 до 31 с шагом 1</label><br>
+            </fieldset>
+            <select name="nationality" id="nationality" required>
+                <option value="RB">РБ</option>
+                <option value="RF">РФ</option>
+            </select><label for="nationality">Национальность</label><br>
+            <span>Адрес:</span><br>
+            <textarea name="address" id="address" cols="30" rows="2"></textarea>
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>Хобби</legend>
+                <label for="fishing">
+                    <input type="checkbox" name="fishing" id="fishing">Рыбалка
+                </label><br>
+                <label for="astronomy">
+                    <input type="checkbox" name="astronomy" id="astronomy">Астрономия
+                </label><br>
+                <label for="diving">
+                    <input type="checkbox" name="diving" id="diving">Дайвинг
+                </label><br>
+                <label for="stamp">
+                    <input type="checkbox" name="stamp" id="stamp">Марки
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Домашние животные</legend>
+                <select name="animals[]" size="12" id="animals" multiple>
+                    <optgroup label="Попугаи">
+                        <option value="parrot1" id="parrot1">Волнистый</option>
+                        <option value="parrot2" id="parrot2">Ара</option>
+                        <option value="parrot3">Неразлучник</option>
+                    </optgroup>
+                    <optgroup label="Рыба">
+                        <option value="fish1">Караси</option>
+                        <option value="fish2">Окуни</option>
+                        <option value="fish3">Осетр</option>
+                    </optgroup>
+                    <optgroup label="Птицы">
+                        <option value="bird1">Стая ворон</option>
+                        <option value="bird2">Аист</option>
+                        <option value="bird3">Археоптерикс</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+            <input type="text" name="login" width="20" pattern="[A-Za-z]{5,20}"  placeholder="Логин" required><br>
+            <input type="password" name="password" width="20" pattern="[A-Za-z]{10,}" placeholder="Пароль" required
+                   autocomplete="off"><br>
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Координаты:</legend>
+            <input type="email" name="email" placeholder="Введите адрес почты"><br>
+            <input type="url" name="url" placeholder="Введите адрес сайта"><br>
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Цифры</legend>
+            <input type="number" name="number" min="-2.5" max="2.5" step="0.1"><br>
+            <input type="range" name="range" min="1" max="10" step="1">
+        </fieldset>
+    </form>
+    <form action="http://fe.it-academy.by/TestForm.php" method="get">
+        <fieldset>
+            <legend>Кнопки управления</legend>
+<!--            Как прикрутить к кнопкам Отправить и сброс, что бы они реагировали на все формы сразу, а не только в которых-->
+<!--            они вложены. Нашел атрибут form для input который можно привязать только к одной форме и соответственно остальные не отправляет(сбрасывает)-->
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить"><br>
+            <input type="image" src="img/email.jpg" disabled>
+        </fieldset>
+    </form>
+ </body>
+</html>
