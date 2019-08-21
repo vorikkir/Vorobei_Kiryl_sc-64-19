@@ -1,0 +1,17 @@
+header{
+    text-align: right;
+}
+h1{
+    font-size: medium;
+}
+h3{
+    font-family: 'Pacifico', cursive;
+    text-decoration: underline;
+    text-indent: 5mm;
+}
+article{
+    font-family: 'Cormorant Infant', serif;
+    font-style: italic;
+    font-size: large;
+    text-indent: 5mm;
+}
