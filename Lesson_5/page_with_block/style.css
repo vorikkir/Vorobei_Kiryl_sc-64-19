@@ -1,0 +1,31 @@
+.navig {
+    width: 15em;
+    float: left; /*Как сделать, что бы блок навигации всегда доходил да футера и был полностью закрашен?*/
+    background: wheat;
+}
+.art{
+    margin-left: 15em;
+}
+.article1 {
+    float: left;
+    background: lightslategray;
+    font-size: large;
+    margin-bottom: .2em;
+}
+
+.article2 {
+    background: lightslategray;
+    float: left;
+    font-size: large;
+    margin-bottom: .2em;
+}
+
+.footer{
+    width: 100%;
+    background: khaki;
+    clear: both;
+}
+
+img{
+    float: right;
+}

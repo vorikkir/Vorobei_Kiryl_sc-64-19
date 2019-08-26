@@ -1,0 +1,20 @@
+.list{
+    width: 350px;
+    list-style-type: upper-roman;
+}
+
+ul.low li{
+    list-style-type: lower-roman;
+}
+
+p{
+    width: 400px;
+    max-height:4.5em;
+    background: black;
+    color: green;
+    overflow: auto;
+}
+
+span{
+     font-weight: 600;
+ }

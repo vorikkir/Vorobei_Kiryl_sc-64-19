@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.hat {
+    display: flex;
+    flex-direction: row;
+}
+
+.navig{
+    flex:0 0 250px;
+    background: burlywood
+}
+
+.art{
+    flex:1 1 500px;
+    background: darkgrey
+}
+
+.footer{
+    background: goldenrod
+}
+
+img{
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.navig {*/
+/*    width: 15em;*/
+/*    float: left; !*Как сделать, что бы блок навигации всегда доходил да футера и был полностью закрашен?*!*/
+/*    background: wheat;*/
+/*}*/
+/*.art{*/
+/*    margin-left: 15em;*/
+/*}*/
+/*.article1 {*/
+/*    float: left;*/
+/*    background: lightslategray;*/
+/*    font-size: large;*/
+/*    margin-bottom: .2em;*/
+/*}*/
+
+/*.article2 {*/
+/*    background: lightslategray;*/
+/*    float: left;*/
+/*    font-size: large;*/
+/*    margin-bottom: .2em;*/
+/*}*/
+
+/*.footer{*/
+/*    width: 100%;*/
+/*    background: khaki;*/
+/*    clear: both;*/
+/*}*/
+
+/*img{*/
+/*    float: right;*/
+/*}*/

@@ -1,0 +1,20 @@
+.defalt{
+    width: 140px;
+    height: 190px;
+    background-image: url("img/cards.png");
+    float: left;
+}
+.cards1 {
+    background-position: -143px -199px;
+    border-radius: 21px;
+}
+.cards2{
+    background-position: -433px -597px;
+    margin-left: -98px;
+    border-radius: 24px;
+}
+.cards3{
+    background-position: -289px -1393px;
+    margin-left: -100px;
+    border-radius: 23px;
+}
